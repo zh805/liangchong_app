@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+        <android.support.v7.widget.SearchView
+            android:id="@+id/map_search_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/et_background"/>
+
+    <RadioGroup
+        android:id="@+id/map_button_group"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/bt_menu_all"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_btm_map_menu"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="全部"/>
+
+        <RadioButton
+            android:id="@+id/bt_menu_cole"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_btm_map_menu"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="甲虫类"/>
+
+        <RadioButton
+            android:id="@+id/bt_menu_mites"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_btm_map_menu"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="螨类"/>
+
+        <RadioButton
+            android:id="@+id/bt_menu_moth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_btm_map_menu"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="蛾类"/>
+
+    </RadioGroup>
+
+    <ListView
+        android:id="@+id/lv_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@drawable/divider"
+        android:dividerHeight="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>

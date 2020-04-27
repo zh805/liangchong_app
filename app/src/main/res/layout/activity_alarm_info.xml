@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="#aeacac">
+        <Button
+            android:id="@+id/user_info_back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/back"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="预警设置"
+            android:textColor="#000"
+            android:textSize="23sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="30dp"
+            android:text="预警功能"
+            android:textSize="23sp"/>
+
+        <Switch
+            android:id="@+id/sw_alarm"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="30dp"
+            android:showText="true"
+            android:textColor="#9f9f9f"
+            android:textOff="关"
+            android:textOn="开"
+            android:textSize="6dp"
+            android:thumb="@drawable/thumb"
+            android:track="@drawable/switch_track"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_alarm"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow>
+
+                    <TextView
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"
+                        android:text="季节"/>
+
+                    <TextView
+                        android:layout_width="210dp"
+                        android:layout_span="3"
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"
+                        android:text="春"/>
+
+                    <TextView
+                        android:layout_width="210dp"
+                        android:layout_span="3"
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"
+                        android:text="夏"/>
+
+                    <TextView
+                        android:layout_width="210dp"
+                        android:layout_span="3"
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"
+                        android:text="秋"/>
+
+                    <TextView
+                        android:layout_width="210dp"
+                        android:layout_span="3"
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"
+                        android:text="冬"/>
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"
+                        android:text="报警等级"/>
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"
+                        android:text="基本安全"/>
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"
+                        android:text="一般虫情"/>
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"
+                        android:text="严重虫情"/>
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"
+                        android:text="基本安全"/>
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"
+                        android:text="一般虫情"/>
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"
+                        android:text="严重虫情"/>
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"
+                        android:text="基本安全"/>
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"
+                        android:text="一般虫情"/>
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"
+                        android:text="严重虫情"/>
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"
+                        android:text="基本安全"/>
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"
+                        android:text="一般虫情"/>
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"
+                        android:text="严重虫情"/>
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"
+                        android:text=" 蛀蚀性害虫数量（头/周）"/>
+
+                    <EditText
+                        android:id="@+id/et_alarm_spring_bs"
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:id="@+id/et_alarm_spring_g"
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:id="@+id/et_alarm_spring_s"
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:id="@+id/et_alarm_summer_bs"
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:id="@+id/et_alarm_summer_g"
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:id="@+id/et_alarm_summer_s"
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:id="@+id/et_alarm_autumn_bs"
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:id="@+id/et_alarm_autumn_g"
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:id="@+id/et_alarm_autumn_s"
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:id="@+id/et_alarm_winter_bs"
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:id="@+id/et_alarm_winter_g"
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:id="@+id/et_alarm_winter_s"
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"/>
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"
+                        android:text=" 粉蚀性害虫数量（头/周）"/>
+
+                    <EditText
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"/>
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"
+                        android:text="局部增长率（/周）"/>
+
+                    <EditText
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"/>
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"
+                        android:text="整仓增长率（/周）"/>
+
+                    <EditText
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:background="@drawable/tv_background"
+                        android:gravity="center"/>
+                </TableRow>
+            </TableLayout>
+        </HorizontalScrollView>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="确认修改"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+</LinearLayout>

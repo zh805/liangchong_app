@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="leftitem">
+        <item>设置</item>
+        <item>我的</item>
+        <item>关注</item>
+        <item>...</item>
+    </string-array>
+    <string-array name="deport_number" translatable="false">
+        <item>42</item>
+        <item>38</item>
+        <item>36</item>
+        <item>32</item>
+    </string-array>
+    <string-array name="time_sample" translatable="false">
+        <item>天</item>
+        <item>周</item>
+    </string-array>
+    <string-array name="pest_type" translatable="false">
+        <item>米象</item>
+        <item>玉米象</item>
+        <item>谷蠹</item>
+        <item>长角扁谷盗</item>
+        <item>土耳其扁谷盗</item>
+        <item>锈赤扁谷盗</item>
+        <item>赤拟谷盗</item>
+        <item>杂拟谷盗</item>
+        <item>锯谷盗</item>
+    </string-array>
+</resources>

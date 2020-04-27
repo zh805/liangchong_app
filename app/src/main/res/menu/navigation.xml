@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/triModel_item"
+        android:icon="@drawable/tri_model"
+        android:title="三维模型"/>
+    <item
+        android:id="@+id/chart_item"
+        android:icon="@drawable/chart"
+        android:title="虫情查看"/>
+    <item
+        android:id="@+id/map_item"
+        android:icon="@drawable/map"
+        android:title="害虫图鉴"/>
+    <item
+        android:id="@+id/sample_item"
+        android:icon="@drawable/sample"
+        android:title="数据采集"/>
+</menu>
